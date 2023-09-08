@@ -1,2 +1,2 @@
 # criptografia
-Nodejs | Criptgrafia | Token | Algoritimos de Cripto |sssssssssssssssssssssssssssssssssssssssssss
+Nodejs | Criptgrafia | Token | Algoritimos de Cripto |
