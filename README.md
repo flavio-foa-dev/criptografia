@@ -93,3 +93,8 @@ A forma mais segura, se bem implementada, é utilizar cookie httpOnly para armaz
 
 Então, para manter tokens JWT seguros, é recomendável utilizar cookies httpOnly.
 
+
+O que são exatamente os algoritmos criptográficos e quais parâmetros existem em cada um;
+Alguns ataques (Rainbow Table, Força Bruta e Dicionário) e as vulnerabilidades que podemos estar sujeitos e devemos ter atenção enquanto implementamos soluções;
+Quais recursos e atitudes podemos utilizar para mitigar problemas relacionados à nossa infraestrutura tecnológica.
+
