@@ -98,3 +98,6 @@ O que são exatamente os algoritmos criptográficos e quais parâmetros existem 
 Alguns ataques (Rainbow Table, Força Bruta e Dicionário) e as vulnerabilidades que podemos estar sujeitos e devemos ter atenção enquanto implementamos soluções;
 Quais recursos e atitudes podemos utilizar para mitigar problemas relacionados à nossa infraestrutura tecnológica.
 
+Fatores humanos e quais considerações devemos levar em conta quando estamos desenvolvendo sistemas;
+Como escolher requisitos de forma crítica e ponderar sobre as decisões de segurança;
+Os cuidados que devemos tomar com as dependências que utilizamos e tentar conhecer os riscos associados.
