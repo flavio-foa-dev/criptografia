@@ -52,4 +52,32 @@ Quais são algumas de suas aplicações práticas, como o uso em sistemas de aut
 A implementar os métodos do módulo crypto, como o createHash;
 Como utilizar o “sal” para melhorar a eficácia das hashes, aumentando drasticamente a quantidade de possibilidades existentes para um algoritmo de encriptação.
 
+Os métodos de encriptação e desencriptação do módulo crypto são essenciais para a criação de chaves com NodeJS. Nesse sentido, vamos nos aprofundar sobre a estrutura dos métodos?
+
+Método crypto.createCipheriv()
+O método crypto.createCipheriv() funciona como uma interface embutida no módulo crypto que retorna um objeto Cipher com os parâmetros do algoritmo, a chave e o vetor de inicialização (iv - do inglês “Initialization Vector”).
+
+A sintaxe é:
+
+crypto.createCipheriv(algoritmo, chave, iv, opcoes)COPIAR CÓDIGO
+Percebemos então que o método aceita quatro parâmetros:
+
+algoritmo: é um dado do tipo string que está interligado com a biblioteca de implementação dos protocolos SSL e TLS, a OpenSSL . Alguns dos exemplos foram utilizados no curso, como aes256 ou rsa. Nas versões mais recentes da OpenSSL o comando no terminal openssl list -cipher-algorithms mostra os algoritmos de cifra disponíveis.
+chave (key): é a chave bruta usada pelo algoritmo e vetor de inicialização. A chave pode ser um KeyObject ou do tipo secret.
+iv: o vetor de inicialização que é responsável por fornecer um estado inicial. O iv precisa ser único ou imprevisível. O ideal é que seja criptografado de forma aleatória e não precisa ser secreto. Caso não necessite de um vetor de inicialização, o iv pode ser do tipo null.
+options (opções): o último parâmetro é um argumento opcional, que pode alterar o modo de operação da função, definindo algumas configurações específicas.
+Método crypto.createDecipheriv()
+O método crypto.createDecipheriv() funciona de forma bem similar ao createCipheriv(). No entanto, a interface retorna um objeto Decipher e os parâmetros são os mesmos. Sua sintaxe é:
+
+crypto.createDecipheriv( algoritmo, chave, iv, opcoes)COPIAR CÓDIGO
+Método crypto.generateKeyPairSync()
+O método crypto.generateKeyPairSync() também funciona como uma interface do módulo crypto. Porém, cria um novo e assimétrico par de chaves do tipo especificado que retorna um objeto com uma private key e public key que pode ser uma string, buffer ou KeyObject. Sua sintaxe é:
+
+crypto.generateKeyPairSync( type, options)COPIAR CÓDIGO
+O método aceita dois parâmetros, que são:
+
+type (tipo): É do tipo string e deve incluir um ou mais dos seguintes algoritmos: ‘rsa’, ‘dsa’, ‘ec’, ‘ed25519’, ‘ed448’, ‘x25519’, ‘x448’, ou ‘dh’.
+
+options (opções): É do tipo objeto. Ele pode conter os parâmetros modulusLength; publicExponent; divisorLength; namedCurve; prime; primeLength; generator; groupName; publicKeyEncoding; privateKeyEncoding.
+
 
