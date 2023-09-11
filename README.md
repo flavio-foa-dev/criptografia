@@ -47,3 +47,9 @@ Ela foi projetada para aplicações como verificação de integridade de arquivo
 O tamanho da saída padrão do BLAKE3 é 256 bits.
 
 
+O que são funções de hash e seu funcionamento prático para gerar dados que não podem ser restaurados à seu valor original;
+Quais são algumas de suas aplicações práticas, como o uso em sistemas de autenticação;
+A implementar os métodos do módulo crypto, como o createHash;
+Como utilizar o “sal” para melhorar a eficácia das hashes, aumentando drasticamente a quantidade de possibilidades existentes para um algoritmo de encriptação.
+
+
